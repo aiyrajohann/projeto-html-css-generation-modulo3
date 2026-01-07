@@ -1,113 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
-
-    <!-- Link para a Folha de Estilo da Página - CSS -->
-	<link rel="stylesheet" href="./assets/css/styles.css" />
-
-    <title>Contato</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <title>Meu Perfil</title>
 </head>
-
 <body>
-
-    <!-- Cabeçalho da Página (header) -->
     <header>
+       <h1>Bem-vindo ao Portfólio da Aiyra</h1>
 
-        <!-- Título do cabeçalho -->
-        <h1>Generation Brasil</h1>
-
-        <!-- Menu de Navegação -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-
+       <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+       </nav>
     </header>
 
-    <!-- Seção Principal da Página (main) -->
     <main>
-
-        <!-- Seção do Formulário -->
-        <form action="#" method="submit" id="formulario">
-
-            <label for="nome">Nome: </label>
-            <input id="name" type="text" name="name" placeholder="Digite seu nome" />
-            <span id="errNome"></span>
-
-            <label for="email">Email: </label>
-            <input id="email" type="text" name="email" placeholder="Digite seu email" />
-            <span id="errEmail"></span>
-
-            <label for="subject">Assunto: </label>
-            <input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem" />
-            <span id="errSubject"></span>
-
-            <label for="message">Mensagem: </label>
-            <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
-
-            <button type="submit">Enviar</button>
-
-        </form>
-
-        <!-- Seção do Google Maps -->
-        <article>
-
-            <address>
-                <p>Av. Paulista, 100</p>
-                <p>São Paulo - SP</p>
-            </address>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr"
-                width="400"
-                height="250"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen
-                aria-hidden="false"
-                tabindex="0"
-            ></iframe>
-
-        </article>
-
-
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <article>
+                <img src="./assets/img/foto perfil.png" alt="Foto de Aiyra" width="200" height="200">
+                <p>
+                    Olá! Meu nome é Aiyra, tenho 28 anos e sou estudante de Desenvolvimento Web Full Stack na Generation Brasil. 
+                    Estou entusiasmada em compartilhar meu portfólio com vocês, onde apresento meus projetos e habilidades adquiridas 
+                    ao longo do curso. Estou ansiosa para contribuir com soluções inovadoras e crescer profissionalmente na área de tecnologia. 
+                </p>
+            </article>
+        </section>
+        <section id="video">
+            <h2>Minha musica favorita</h2>
+            <figure>
+                
+               <iframe 
+               width="560" 
+               height="315" 
+               src="https://www.youtube.com/embed/XaI3_rZGXLA?si=KkADlG6QVQjsy75p" 
+               title="YouTube video player" 
+               frameborder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+               referrerpolicy="strict-origin-when-cross-origin" 
+               allowfullscreen></iframe>
+               
+            </figure>
+        </section>
+    
     </main>
 
-    <!-- Rodapé da Página (footer) -->
     <footer>
-
-        <!-- Seção de Contato - Redes Sociais-->
         <section>
-
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+            <a href="https://github.com/aiyrajohann">
+                <img src="./assets/img/github.png" alt="GitHub" width="30" height="30">
             </a>
-
-            <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
+            <a href="https://www.linkedin.com/in/aiyra-johann-10500377/">
+                <img src="./assets/img/linkedin.png" alt="LinkedIn" width="30" height="30"> 
             </a>
+            <a href="https://www.instagram.com/aiyrajohann_/">
+                <img src="./assets/img/instagram.png" alt="Instagram" width="30" height="30">
 
-            <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
-            </a>
 
         </section>
+        <p>© 2026 Aiyra. Todos os direitos reservados.</p>
 
-        <h3>
-            Feito com 🧡 por Generation Brasil - 2025
-        </h3>
 
     </footer>
-
 </body>
-
 </html>
