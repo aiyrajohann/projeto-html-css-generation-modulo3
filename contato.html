@@ -33,21 +33,21 @@
         <form action="#" method="submit" id="formulario">
             
             <label for="nome">Nome:</label>
-            <input id="name" type="text" name="nome" placeholder="Digite seu nome:"/>
-            <span id="errNome"></span>
+            <input id="nome" type="text" name="nome" placeholder="Digite seu nome:" onkeyup="validarNome()"/>
+            <div id="txtNome"></div>
 
             <label for="email">E-mail:</label>
-            <input id="email" type="text" name="email" placeholder="Digite seu email:"/>
-            <span id="errEmail"></span>
+            <input id="email" type="text" name="email" placeholder="Digite seu email:" onkeyup="validarEmail()" />
+            <div id="txtEmail"></div>
 
             <label for="subject">Assunto:</label>
-            <input id="subject" type="text" name="subject" placeholder="Digite o assunto:"/>
-            <span id="errSubject"></span>
+            <input id="subject" type="text" name="subject" placeholder="Digite o assunto:" onkeyup="validarSubject()"/>
+            <div id="txtSubject"></div>
 
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem:"></textarea>
-            
-            <button type="submit">Enviar</button>
+            <input id="mensagem" name="mensagem" placeholder="Digite sua mensagem:" onkeyup="validarMensagem()"/>
+            <div id="txtMensagem"></div>
+            <button onclick="enviar()" type="submit">Enviar</button>
         </form>
 
     
@@ -59,12 +59,14 @@
             </address>
             <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9129408986914!2d-51.156543799999994!3d-30.0106561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519770c84cf1527%3A0x11060962a41bcc67!2sAv.%20Assis%20Brasil%2C%203065%20-%20Passo%20d&#39;Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091010-007!5e0!3m2!1spt-BR!2sbr!4v1767832896968!5m2!1spt-BR!2sbr" 
-            width="600" 
-            height="450" 
+            width="400" 
+            height="250" 
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade"
+            id="mapa"
+            onmouseover="mapaZoom()" onmouseout="mapaNormal()">
         </iframe>
 
         </article>
@@ -83,13 +85,13 @@
             </a>
             <a href="https://www.instagram.com/aiyrajohann_/">
                 <img src="./assets/img/instagram.png" alt="Instagram" width="30" height="30">
-
+            </a>
 
         </section>
         <p>© 2026 Aiyra. Todos os direitos reservados.</p>
 
     </footer>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
